@@ -1,4 +1,4 @@
-package com.bolero.sf5b2gpetclinic.model;
+package se.bolero.sf5b2gpetclinic.model;
 
 public class PetType {
 

@@ -1,4 +1,4 @@
-package com.bolero.sf5b2gpetclinic;
+package se.bolero.sf5b2gpetclinic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
