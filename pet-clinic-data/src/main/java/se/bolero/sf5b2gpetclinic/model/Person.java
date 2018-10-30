@@ -1,6 +1,6 @@
 package se.bolero.sf5b2gpetclinic.model;
 
-public class Person {
+public class Person extends BaseEntity {
 
     private String firstName;
     private String lastName;

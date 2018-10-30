@@ -1,6 +1,6 @@
 package se.bolero.sf5b2gpetclinic.model;
 
-public class PetType {
+public class PetType extends BaseEntity {
 
     private String name;
 
