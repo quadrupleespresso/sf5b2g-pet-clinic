@@ -6,8 +6,6 @@ import se.bolero.sf5b2gpetclinic.model.Owner;
 import se.bolero.sf5b2gpetclinic.model.Vet;
 import se.bolero.sf5b2gpetclinic.services.OwnerService;
 import se.bolero.sf5b2gpetclinic.services.VetService;
-import se.bolero.sf5b2gpetclinic.services.map.OwnerServiceMap;
-import se.bolero.sf5b2gpetclinic.services.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -16,8 +14,8 @@ public class DataLoader implements CommandLineRunner {
     private final VetService vetService;
 
     public DataLoader(OwnerService ownerService, VetService vetService) {
-        this.ownerService = new OwnerServiceMap();
-        this.vetService = new VetServiceMap();
+        this.ownerService = ownerService    ;
+        this.vetService = vetService;
     }
 
     @Override
@@ -41,7 +39,7 @@ public class DataLoader implements CommandLineRunner {
         owner.setLastName("Pettersson");
         ownerService.save(owner);
 
-        System.out.println("Loaded Owners....");
+        System.out.println("Loaded Owners...." + ownerService.findAll() );
 
         Vet vet = new Vet();
         vet.setId(1L);
@@ -55,6 +53,6 @@ public class DataLoader implements CommandLineRunner {
         vet.setLastName("Porter");
         vetService.save(vet);
 
-        System.out.println("Loaded vets...");
+        System.out.println("Loaded vets..." + vetService.findAll() );
     }
 }
