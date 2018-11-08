@@ -1,11 +1,11 @@
 package se.bolero.sf5b2gpetclinic.services.map;
 
 import se.bolero.sf5b2gpetclinic.model.Vet;
-import se.bolero.sf5b2gpetclinic.services.CrudService;
+import se.bolero.sf5b2gpetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
         return super.findAll();
