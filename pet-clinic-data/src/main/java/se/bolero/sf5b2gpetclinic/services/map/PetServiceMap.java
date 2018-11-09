@@ -2,12 +2,12 @@ package se.bolero.sf5b2gpetclinic.services.map;
 
 import org.springframework.stereotype.Service;
 import se.bolero.sf5b2gpetclinic.model.Pet;
-import se.bolero.sf5b2gpetclinic.services.CrudService;
+import se.bolero.sf5b2gpetclinic.services.PetService;
 
 import java.util.Set;
 
 @Service
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
     @Override
     public Set<Pet> findAll() {
         return super.findAll();
