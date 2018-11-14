@@ -5,5 +5,5 @@ import se.bolero.sf5b2gpetclinic.model.Owner;
 
 public interface OwnerRepository extends CrudRepository<Owner, Long>{
 
-    Owner finbByLastName(String lastName);
+    public Owner findByLastName(String lastName);
 }
