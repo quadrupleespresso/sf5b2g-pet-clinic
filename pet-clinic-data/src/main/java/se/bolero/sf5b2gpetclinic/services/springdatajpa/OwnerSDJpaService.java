@@ -1,4 +1,4 @@
-package se.bolero.sf5b2gpetclinic.services.Springdatajpa;
+package se.bolero.sf5b2gpetclinic.services.springdatajpa;
 
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
