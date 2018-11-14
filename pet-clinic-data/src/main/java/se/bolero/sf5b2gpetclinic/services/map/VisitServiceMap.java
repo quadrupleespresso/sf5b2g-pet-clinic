@@ -1,5 +1,6 @@
 package se.bolero.sf5b2gpetclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import se.bolero.sf5b2gpetclinic.model.Visit;
 import se.bolero.sf5b2gpetclinic.services.VisitService;
@@ -7,6 +8,7 @@ import se.bolero.sf5b2gpetclinic.services.VisitService;
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class VisitServiceMap extends AbstractMapService<Visit, Long> implements VisitService {
 
 

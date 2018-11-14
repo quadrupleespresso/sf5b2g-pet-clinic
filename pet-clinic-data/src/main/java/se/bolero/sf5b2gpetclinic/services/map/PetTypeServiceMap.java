@@ -1,5 +1,6 @@
 package se.bolero.sf5b2gpetclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import se.bolero.sf5b2gpetclinic.model.PetType;
 import se.bolero.sf5b2gpetclinic.services.PetTypeService;
@@ -7,6 +8,7 @@ import se.bolero.sf5b2gpetclinic.services.PetTypeService;
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class PetTypeServiceMap extends AbstractMapService<PetType, Long> implements PetTypeService {
 
     @Override
